@@ -434,21 +434,21 @@ footer{border-top:1px solid var(--rule);padding:30px 0 40px}
       <div class="art" aria-hidden="true">
         <div class="mini-row"><span class="mini-k">Back the same day</span><b>11 of 14</b></div>
         <div class="mini-row"><span class="mini-k">Typical outage</span><b>4.1 h</b></div>
-        <div class="mini-row"><span class="mini-k">Monitoring alert raised</span><b>9 of 14</b></div>
+        <div class="mini-row"><span class="mini-k">Daylight hours lost</span><b>31 h</b></div>
         <div class="mini-row"><span class="mini-k">In the service log</span><b>1 of 14</b></div></div>
       <p>Daylight hours lost, and whether anyone logged it.</p></article>
     <article class="tc"><div class="tag">Scenarios</div><h3>Try the fixes</h3>
       <div class="art" aria-hidden="true">
-        <span class="mini-k">Clear snow after storms of 15 cm</span><div class="mini-slider"><i style="width:40%"></i><u style="left:37%"></u></div>
-        <span class="mini-k">Restart within 4 hours</span><div class="mini-slider"><i style="width:62%"></i><u style="left:59%"></u></div>
+        <span class="mini-k">Clear the panels after storms of 15 cm</span><div class="mini-slider"><i style="width:40%"></i><u style="left:37%"></u></div>
+        <span class="mini-k">Power back the same day</span><div class="mini-slider"><i style="width:100%"></i><u style="left:92%"></u></div>
         <div class="mini-row" style="margin-top:4px"><span>Recovered each year</span><b>+148 MWh</b></div></div>
       <p>Change how each cause is handled and see what comes back.</p></article>
     <article class="tc"><div class="tag">Evidence</div><h3>A packet for every outage</h3>
       <div class="art" aria-hidden="true">
-        <div class="mini-row"><span>meter_readings.csv</span><span class="mini-k">48 KB</span></div>
-        <div class="mini-row"><span>fault_codes.csv</span><span class="mini-k">6 KB</span></div>
-        <div class="mini-row"><span>original_files/</span><span class="mini-k">31 files</span></div>
-        <div class="mini-row"><span>checksums.txt</span><span class="mini-k">SHA-256</span></div></div>
+        <div class="mini-row"><span>summary.html</span><span class="mini-k">the outage</span></div>
+        <div class="mini-row"><span>faults_decoded.csv</span><span class="mini-k">codes explained</span></div>
+        <div class="mini-row"><span>originals/</span><span class="mini-k">byte for byte</span></div>
+        <div class="mini-row"><span>manifest.csv</span><span class="mini-k">SHA-256</span></div></div>
       <p>The original files, the codes explained, and a checksum list that shows nothing changed.</p></article>
     <article class="tc"><div class="tag">Requests</div><h3>What would change a finding</h3>
       <div class="art" aria-hidden="true">
@@ -481,7 +481,7 @@ footer{border-top:1px solid var(--rule);padding:30px 0 40px}
   <div class="section-tag"><span class="eyebrow">Case study · one of the sites we audit · 2026</span><span class="line"></span></div>
   <div class="exhibit"><div class="ex-num">EXHIBIT 01</div><div class="ex-body"><b>14</b> outages in six months. The owner&#39;s service ledger shows <b>1</b>.</div></div>
   <div class="exhibit"><div class="ex-num">EXHIBIT 02</div><div class="ex-body">Every one began with a grid-protection trip. <b>None</b> with an inverter fault.</div></div>
-  <div class="exhibit"><div class="ex-num">EXHIBIT 03</div><div class="ex-body">Independent measurement reconciled to the revenue meter within <b>0.11%</b> across a full summer month, every day within 2%.</div></div>
+  <div class="exhibit"><div class="ex-num">EXHIBIT 03</div><div class="ex-body">Independent measurement agreed with the revenue meter within <b>0.2%</b> in each of July, August and September, with its settings fixed in July.</div></div>
   <div class="exhibit"><div class="ex-num">EXHIBIT 04</div><div class="ex-body"><b>1</b> began with an on-site failure, by the O&amp;M technician&#39;s assessment. Its fault codes look exactly like a grid trip.</div></div>
   <div class="exhibit"><div class="ex-num">EXHIBIT 05</div><div class="ex-body"><b>Over 100</b> outages since 2022, and no long one ended at night. Restoration waits for daylight.</div></div>
   <p class="lede" style="margin-top:34px;max-width:760px">Most of what this site lost to outages never reached the owner&#39;s service ledger, and long outages only ever ended in daylight. We find it, show how each outage began, and name the records that settle who pays.</p>
@@ -619,7 +619,7 @@ footer{border-top:1px solid var(--rule);padding:30px 0 40px}
   <div class="lv-grid">
     <div class="lv-group g-data">
       <div class="eyebrow">Levels 1 and 2 · No hardware on site</div>
-      <h3>Get more from the data you already have</h3>
+      <h3>Make sense of the data you already have</h3>
       <p>Start here when the question is what your records can prove. We read your monitoring data, test it against itself and the revenue meter, and say what it shows and what it cannot.</p>
     </div>
     <div class="lv-group g-inst">
